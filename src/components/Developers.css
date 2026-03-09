@@ -1,0 +1,63 @@
+.developers-section { background: var(--dark2); position: relative; z-index: 1; }
+.dev-header { text-align: center; margin-bottom: 44px; }
+.dev-team-label { font-family: 'Share Tech Mono', monospace; font-size: 0.65rem; letter-spacing: 4px; color: var(--text-dim); margin-bottom: 8px; }
+.dev-team-name { font-family: 'Orbitron', monospace; font-size: clamp(1.1rem, 4vw, 1.4rem); font-weight: 900; color: var(--neon-blue); text-shadow: 0 0 20px rgba(0,240,255,0.4); }
+.dev-team-sub { font-family: 'Share Tech Mono', monospace; font-size: 0.6rem; letter-spacing: 2px; color: var(--text-dim); margin-top: 6px; }
+.dev-grid {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 36px;
+  flex-wrap: wrap;
+}
+.dev-card {
+  padding: 24px 16px;
+  text-align: center;
+  width: 220px;
+  min-height: 220px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.dev-avatar {
+  width: 72px; height: 72px; margin: 0 auto 14px;
+  border-radius: 50%; border: 2px solid rgba(0,240,255,0.2);
+  background: linear-gradient(135deg, rgba(0,240,255,0.05), rgba(200,0,255,0.05));
+  display: flex; align-items: center; justify-content: center;
+  font-size: 2rem; position: relative; overflow: hidden;
+}
+.dev-avatar::after {
+  content: ''; position: absolute; inset: 0; border-radius: 50%;
+  background: repeating-linear-gradient(0deg, rgba(0,240,255,0.03) 0px, rgba(0,240,255,0.03) 1px, transparent 1px, transparent 3px);
+  animation: scanDown 2s linear infinite;
+}
+.dev-name { font-family: 'Orbitron', monospace; font-size: 0.75rem; font-weight: 700; color: #fff; margin-bottom: 4px; }
+.dev-role { font-family: 'Share Tech Mono', monospace; font-size: 0.58rem; letter-spacing: 2px; color: var(--neon-blue); }
+.dev-stack { padding: 20px; text-align: center; }
+.stack-label { font-family: 'Share Tech Mono', monospace; font-size: 0.6rem; letter-spacing: 3px; color: var(--text-dim); margin-bottom: 12px; }
+.stack-items { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; align-items: center; }
+.stack-item { font-family: 'Rajdhani', sans-serif; font-size: 0.9rem; color: var(--neon-blue); }
+.stack-dot { color: var(--text-dim); }
+
+@media (max-width: 768px) {
+  .dev-grid {
+    justify-content: center;
+    gap: 10px;
+  }
+  .dev-card {
+    width: 160px;
+    min-height: 180px;
+    padding: 18px 8px;
+  }
+}
+@media (max-width: 480px) {
+  .dev-grid {
+    justify-content: center;
+    gap: 10px;
+  }
+  .dev-card { padding: 18px 12px; }
+  .dev-avatar { width: 60px; height: 60px; font-size: 1.6rem; }
+}

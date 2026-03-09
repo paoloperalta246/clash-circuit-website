@@ -1,0 +1,81 @@
+/* Center the rank row and badges */
+.rank-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 12px;
+}
+.overview-section {
+  background: linear-gradient(180deg, var(--dark) 0%, var(--dark2) 100%);
+  position: relative; z-index: 1;
+}
+.overview-stats {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 2px; margin-bottom: 40px;
+}
+.overview-stat { padding: 36px 30px; text-align: center; }
+.stat-num {
+  font-family: 'Orbitron', monospace; font-size: clamp(2rem, 6vw, 3rem);
+  font-weight: 900; color: var(--neon-blue); line-height: 1;
+  text-shadow: 0 0 30px rgba(0,240,255,0.6);
+}
+.stat-label {
+  font-family: 'Rajdhani', sans-serif; font-size: 0.8rem;
+  letter-spacing: 3px; text-transform: uppercase;
+  color: var(--text-dim); margin-top: 8px;
+}
+.overview-desc {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 16px; margin-bottom: 0;
+}
+.overview-card { padding: 28px; }
+.overview-card h3 {
+  font-family: 'Orbitron', monospace; font-size: 0.85rem;
+  letter-spacing: 2px; color: var(--neon-blue); margin-bottom: 14px;
+}
+.overview-card p { font-size: 0.95rem; line-height: 1.7; color: var(--text-dim); }
+.overview-card strong { color: #fff; }
+.overview-card .blue  { color: var(--neon-blue); }
+.choose-note { font-size: 0.85rem !important; margin-top: 14px; }
+.level-progress {
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  gap: 2px; margin-top: 32px;
+}
+.level-block { padding: 20px 14px; text-align: center; }
+.level-nums {
+  font-family: 'Orbitron', monospace; font-size: clamp(1.3rem, 4vw, 1.8rem);
+  font-weight: 900; line-height: 1; margin-bottom: 4px;
+}
+.level-name {
+  font-family: 'Share Tech Mono', monospace; font-size: 0.55rem;
+  letter-spacing: 1px; margin-bottom: 4px;
+}
+.level-theme { font-family: 'Rajdhani', sans-serif; font-size: 0.75rem; color: var(--text-dim); }
+.level-block.enforcer { border-color: rgba(255,26,60,0.15); }
+.level-block.hacker   { border-color: rgba(0,255,100,0.15); }
+.level-block.military { border-color: rgba(100,200,100,0.15); }
+.level-block.dominion { border-color: rgba(200,160,0,0.2); }
+.level-block.enforcer .level-nums { color: var(--neon-red); }
+.level-block.hacker   .level-nums { color: var(--neon-green); }
+.level-block.military .level-nums { color: #64c864; }
+.level-block.dominion .level-nums { color: var(--gold); }
+.level-block.enforcer .level-name { color: var(--neon-red); }
+.level-block.hacker   .level-name { color: var(--neon-green); }
+.level-block.military .level-name { color: #64c864; }
+.level-block.dominion .level-name { color: var(--gold); }
+
+@media (max-width: 900px) {
+  .overview-stats  { grid-template-columns: repeat(3, 1fr); }
+  .overview-desc   { grid-template-columns: 1fr; }
+  .level-progress  { grid-template-columns: repeat(2, 1fr); }
+  .overview-stat   { padding: 24px 16px; }
+}
+@media (max-width: 600px) {
+  .overview-stats { grid-template-columns: repeat(3, 1fr); }
+  .level-progress { grid-template-columns: repeat(2, 1fr); }
+  .overview-card  { padding: 20px; }
+}
+@media (max-width: 400px) {
+  .overview-stats { grid-template-columns: 1fr; }
+}

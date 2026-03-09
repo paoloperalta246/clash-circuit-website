@@ -1,0 +1,17 @@
+.features-section { background: linear-gradient(180deg, var(--dark3) 0%, var(--dark) 100%); position: relative; z-index: 1; }
+.features-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2px; }
+.feature-card { padding: 32px; }
+.feature-icon { font-size: 2rem; margin-bottom: 14px; display: block; filter: drop-shadow(0 0 8px var(--neon-blue)); }
+.feature-tag-label { font-family: 'Share Tech Mono', monospace; font-size: 0.6rem; letter-spacing: 4px; color: var(--neon-purple); margin-bottom: 8px; display: block; }
+.feature-title { font-family: 'Orbitron', monospace; font-size: 0.95rem; font-weight: 700; color: #fff; margin-bottom: 10px; letter-spacing: 1px; }
+.feature-desc { font-size: 0.88rem; line-height: 1.7; color: var(--text-dim); }
+.feature-pills { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+.feature-pill {
+  font-family: 'Share Tech Mono', monospace; font-size: 0.58rem;
+  padding: 4px 10px; border: 1px solid rgba(0,240,255,0.2);
+  color: var(--neon-blue); background: rgba(0,240,255,0.04); letter-spacing: 1px;
+}
+@media (max-width: 768px) {
+  .features-grid { grid-template-columns: 1fr; }
+  .feature-card { padding: 24px 20px; }
+}

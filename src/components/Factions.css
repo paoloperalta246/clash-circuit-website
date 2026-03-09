@@ -1,0 +1,32 @@
+.factions-section { background: var(--dark2); position: relative; z-index: 1; }
+.factions-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; }
+.faction-card { padding: 28px 20px; text-align: center; }
+.faction-icon-wrap {
+  width: 70px; height: 70px; margin: 0 auto 18px;
+  display: flex; align-items: center; justify-content: center;
+  clip-path: polygon(50% 0%,100% 25%,100% 75%,50% 100%,0% 75%,0% 25%);
+}
+.faction-icon-wrap.enforcer { background: rgba(255,26,60,0.06);   border: 1px solid rgba(255,26,60,0.4); }
+.faction-icon-wrap.hacker   { background: rgba(0,255,100,0.06);   border: 1px solid rgba(0,255,100,0.4); }
+.faction-icon-wrap.military { background: rgba(100,200,100,0.06); border: 1px solid rgba(100,200,100,0.4); }
+.faction-icon-wrap.dominion { background: rgba(200,160,0,0.06);   border: 1px solid rgba(200,160,0,0.4); }
+.faction-emoji { font-size: 1.8rem; }
+.faction-levels { font-family: 'Share Tech Mono', monospace; font-size: 0.58rem; letter-spacing: 3px; margin-bottom: 8px; }
+.faction-levels.enforcer { color: var(--neon-red); }
+.faction-levels.hacker   { color: var(--neon-green); }
+.faction-levels.military { color: #64c864; }
+.faction-levels.dominion { color: var(--gold); }
+.faction-name { font-family: 'Orbitron', monospace; font-size: 0.78rem; font-weight: 700; margin-bottom: 10px; color: #fff; }
+.faction-desc { font-size: 0.82rem; line-height: 1.6; color: var(--text-dim); margin-bottom: 14px; }
+.faction-theme { font-family: 'Share Tech Mono', monospace; font-size: 0.55rem; letter-spacing: 2px; padding: 4px 8px; border: 1px solid; display: inline-block; }
+.faction-theme.enforcer { color: var(--neon-red);   border-color: rgba(255,26,60,0.3); }
+.faction-theme.hacker   { color: var(--neon-green); border-color: rgba(0,255,100,0.3); }
+.faction-theme.military { color: #64c864;            border-color: rgba(100,200,100,0.3); }
+.faction-theme.dominion { color: var(--gold);        border-color: rgba(200,160,0,0.3); }
+
+@media (max-width: 900px) { .factions-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 480px) {
+  .factions-grid { grid-template-columns: 1fr 1fr; }
+  .faction-card { padding: 20px 14px; }
+  .faction-name { font-size: 0.72rem; }
+}

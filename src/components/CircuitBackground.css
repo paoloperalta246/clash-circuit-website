@@ -1,0 +1,17 @@
+.circuit-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 0%, rgba(0,240,255,0.06) 0%, transparent 70%),
+    radial-gradient(ellipse 60% 50% at 100% 100%, rgba(200,0,255,0.05) 0%, transparent 60%),
+    var(--dark);
+}
+.circuit-bg svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.06;
+}

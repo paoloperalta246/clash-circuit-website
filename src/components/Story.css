@@ -1,0 +1,67 @@
+.story-section {
+  background: linear-gradient(180deg, var(--dark2) 0%, #07091a 50%, var(--dark2) 100%);
+  position: relative; z-index: 1; overflow: hidden;
+}
+.story-layout {
+  display: grid; grid-template-columns: 1fr 380px;
+  gap: 50px; align-items: start;
+}
+.story-year {
+  font-family: 'Orbitron', monospace;
+  font-size: clamp(3rem, 10vw, 5rem);
+  font-weight: 900; color: rgba(0,240,255,0.08);
+  letter-spacing: 4px; line-height: 1; margin-bottom: -20px;
+}
+.story-heading {
+  font-family: 'Orbitron', monospace;
+  font-size: clamp(1.3rem, 4vw, 2rem);
+  font-weight: 700; color: #fff; margin-bottom: 20px; line-height: 1.2;
+}
+.story-p { font-size: 0.95rem; line-height: 1.8; color: var(--text-dim); margin-bottom: 16px; }
+.story-p strong { color: #fff; }
+.story-p .blue  { color: var(--neon-blue); }
+.story-quote {
+  border-left: 3px solid var(--neon-blue); padding: 16px 20px;
+  background: rgba(0,240,255,0.04); margin: 24px 0;
+  font-family: 'Rajdhani', sans-serif; font-size: 1.05rem;
+  font-style: italic; color: var(--neon-blue);
+  box-shadow: -4px 0 20px rgba(0,240,255,0.1);
+}
+.story-info-grid {
+  display: flex; gap: 12px; flex-wrap: wrap; margin-top: 24px;
+}
+.story-info-card { padding: 14px 16px; flex: 1; min-width: 130px; }
+.info-label {
+  font-family: 'Share Tech Mono', monospace; font-size: 0.6rem;
+  letter-spacing: 3px; color: var(--neon-blue); margin-bottom: 6px;
+}
+.info-label.red { color: var(--neon-red); }
+.info-title { font-family: 'Orbitron', monospace; font-size: 0.85rem; font-weight: 700; color: #fff; }
+.info-sub { font-size: 0.78rem; color: var(--text-dim); margin-top: 4px; }
+.story-panel { padding: 24px; }
+.story-panel-header {
+  font-family: 'Share Tech Mono', monospace; font-size: 0.65rem;
+  letter-spacing: 3px; color: var(--neon-blue); margin-bottom: 18px;
+}
+.megacorp-badge {
+  text-align: center; padding: 12px;
+  background: rgba(255,26,60,0.05); border: 1px solid rgba(255,26,60,0.2);
+  font-family: 'Orbitron', monospace; font-size: 0.6rem;
+  letter-spacing: 3px; color: var(--neon-red);
+}
+.setting-note { margin-top: 18px; }
+.setting-label {
+  font-family: 'Share Tech Mono', monospace; font-size: 0.6rem;
+  letter-spacing: 3px; color: var(--text-dim); margin-bottom: 8px;
+  text-align: center;
+}
+.setting-note p { font-size: 0.82rem; line-height: 1.6; color: var(--text-dim); }
+
+@media (max-width: 900px) {
+  .story-layout { grid-template-columns: 1fr; gap: 32px; }
+  .holo-img-placeholder { aspect-ratio: 16/9; }
+}
+@media (max-width: 600px) {
+  .story-info-grid { flex-direction: column; }
+  .story-info-card { min-width: 100%; }
+}

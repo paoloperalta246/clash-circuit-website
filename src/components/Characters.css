@@ -44,10 +44,12 @@
 
 @media (max-width: 900px) {
   .characters-grid { grid-template-columns: 1fr; }
-  .char-portrait { aspect-ratio: 16/9; }
+  .char-portrait { aspect-ratio: 16/9; max-width: 100vw; }
   .char-inner { padding: 24px; }
 }
 @media (max-width: 480px) {
   .char-inner { padding: 18px; }
   .char-stat-label { width: 74px; font-size: 0.55rem; }
+  .char-portrait { aspect-ratio: 4/3; max-width: 100vw; }
+  .char-portrait-img { border-radius: 8px; }
 }

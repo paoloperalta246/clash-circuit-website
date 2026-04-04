@@ -22,7 +22,7 @@ const team = [
   },
 ]
 
-const stack = ['Unity Engine', 'C#', 'Android SDK', 'Bluetooth API']
+const stack = ['Unity Engine', 'C#', 'Android SDK']
 
 export default function Developers() {
   return (

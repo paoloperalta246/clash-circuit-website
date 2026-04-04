@@ -3,8 +3,8 @@ import './Download.css'
 const info = [
   { label: 'VERSION',     value: '1.0.0'      },
   { label: 'PLATFORM',    value: 'Android'     },
-  { label: 'FILE SIZE',   value: '~150 MB'     },
-  { label: 'MIN VERSION', value: 'Android 7+'  },
+  { label: 'FILE SIZE',   value: '~106 MB'     },
+  { label: 'MIN VERSION', value: 'Android 7.1'  },
 ]
 
 export default function Download() {
@@ -35,7 +35,14 @@ export default function Download() {
           </div>
 
           {/* Replace href with your actual APK URL */}
-          <a href="#" className="download-btn">⬇ DOWNLOAD APK</a>
+          <a
+            href="https://www.mediafire.com/file/0vbib42aj8qiugh/Clash+Circuit.apk/file"
+            className="download-btn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            ⬇ DOWNLOAD APK
+          </a>
 
           <p className="download-note">
             ENABLE "INSTALL FROM UNKNOWN SOURCES" IN DEVICE SETTINGS

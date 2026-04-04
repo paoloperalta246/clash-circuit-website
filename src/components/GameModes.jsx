@@ -1,18 +1,17 @@
 import './GameModes.css'
 
 const storySteps = [
-  'Select a level from the map (unlocks sequentially)',
-  'Choose your difficulty setting',
-  'Select 2 pre-battle upgrades',
-  'Fight through 3 arena sectors',
-  'Earn your rank grade (S / A / B / C)',
+  'Select a level from the map.',    
+  'Select 2 pre-battle upgrades.',
+  'Fight through 3 arena sectors.',
+  'Defeat all enemies within the level.',
+  'Earn your rank grade (S / A / B / C).',
 ]
 const pvpSteps = [
-  'Connect via Bluetooth or Mobile Hotspot',
-  'Select your character',
-  'Choose 2 pre-battle upgrades',
-  'Fight in the Grand Arena — Best of 3 Rounds',
-  'The stronger fighter takes the Circuit',
+  'Connect via Mobile Hotspot or shared Wi-fi connection.',
+  'Choose 2 pre-battle upgrades.',
+  'Fight in the Grand Arena: Best of 2 Rounds.',
+  'The stronger fighter takes the Circuit.',
 ]
 
 export default function GameModes() {
@@ -29,9 +28,9 @@ export default function GameModes() {
           <div className="panel mode-card fade-in">
             <div className="mode-badge story">// STORY_MODE</div>
             <div className="mode-title">CAMPAIGN</div>
-            <div className="mode-subtitle">PvAI · 8 LEVELS + FINAL BOSS</div>
+            <div className="mode-subtitle">PvAI · 5 LEVELS + FINAL BOSS</div>
             <p className="mode-desc">
-              Progress through 10 levels of increasingly dangerous factions, each guarding
+              Progress through 5 levels of increasingly dangerous factions, each guarding
               the path to the Clash Circuit Grand Arena. Defeat all four factions and confront
               Magnus "Overlord" Virex in the final battle.
             </p>
@@ -49,10 +48,10 @@ export default function GameModes() {
           <div className="panel mode-card pvp-card fade-in">
             <div className="mode-badge pvp">// PVP_MODE</div>
             <div className="mode-title pvp-title">PvP ARENA</div>
-            <div className="mode-subtitle">BLUETOOTH · HOTSPOT · BEST OF 3</div>
+            <div className="mode-subtitle">PVP · HOTSPOT · BEST OF 2</div>
             <p className="mode-desc">
-              Challenge a friend in the Clash Circuit Grand Arena. Connect via Bluetooth or
-              Mobile Hotspot and face off in a best-of-3 rounds fight for supremacy.
+              Challenge a friend in the Clash Circuit Grand Arena. Connect via Mobile Hotspot
+               or through shared Wi-fi connection and face off in a best-of-2 rounds fight for supremacy.
             </p>
             <ol className="mode-steps">
               {pvpSteps.map((s, i) => (

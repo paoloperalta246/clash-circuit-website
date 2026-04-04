@@ -1,16 +1,16 @@
 import './Overview.css'
 
 const stats = [
-  { num: '8', label: 'LEVELS + BOSS' },
+  { num: '5', label: 'LEVELS + FINAL BOSS' },
   { num: '4',  label: 'ENEMY FACTIONS' },
   { num: '2',  label: 'GAME MODES' },
 ]
 
 const levels = [
-  { range: '1–2', name: 'CORPORATE ENFORCERS', theme: 'Industrial Streets',      cls: 'enforcer' },
-  { range: '3–4', name: 'ROGUE HACKERS',        theme: 'Cyber Alleys',            cls: 'hacker'   },
-  { range: '5–6', name: 'MILITARY CORPS',        theme: 'High-Security Facilities',cls: 'military' },
-  { range: '7–8', name: 'DOMINION ELITES',       theme: 'Grand Neon Arena',        cls: 'dominion' },
+  { range: 'Level 1', name: 'CORPORATE ENFORCERS', theme: 'Industrial Streets',      cls: 'enforcer' },
+  { range: 'Level 2', name: 'ROGUE HACKERS',        theme: 'Cyber Alleys',            cls: 'hacker'   },
+  { range: 'Level 3', name: 'MILITARY CORPS',        theme: 'High-Security Facilities',cls: 'military' },
+  { range: 'Level 4', name: 'DOMINION ELITES',       theme: 'Grand Neon Arena',        cls: 'dominion' },  
 ]
 
 export default function Overview() {
@@ -53,13 +53,13 @@ export default function Overview() {
             <h3>// CORE GAMEPLAY</h3>
             <p>
               Each level is divided into <strong>3 Combat Sectors</strong> with increasing
-              enemy difficulty. Defeat all enemies in a Sector to advance.
+              number of enemies each sector. Defeat all enemies to advance to the next level.
             </p>
             <div className="upgrade-grid">
-              <div className="upgrade-pill">🛡️ <span>+10% HP</span> boost</div>
-              <div className="upgrade-pill">⚡ <span>+5% DMG</span> upgrade</div>
-              <div className="upgrade-pill">💨 <span>+5% SPD</span> movement</div>
-              <div className="upgrade-pill">🔄 <span>-10% CD</span> reduction</div>
+              <div className="upgrade-pill">🛡️ <span>+30% </span> HP boost</div>
+              <div className="upgrade-pill">🔃 <span>-20% </span> cooldown reduction</div>
+              <div className="upgrade-pill">⚡ <span>+10% </span> movement speed</div>
+              <div className="upgrade-pill">🔵 <span>+5% </span> mana increase</div>
             </div>
             <p className="choose-note">
               Choose <strong className="blue">2 upgrades</strong> before each battle. Earn

@@ -1,4 +1,6 @@
 import './Characters.css'
+import kaelImg from '../assets/kael-website-pic.png';
+import magnusImg from '../assets/(no border)-magnus-website-pic.png';
 
 const characters = [
   {
@@ -62,13 +64,29 @@ export default function Characters() {
               <div className={`char-inner bg-${c.id}`}>
                 {/* Portrait — replace div with <img src="..." /> */}
                 <div className="char-portrait">
-                  <div className={`char-portrait-bg portrait-${c.id}`}>
-                    <div className="char-portrait-scan" />
-                    <span className="char-silhouette" style={{ color: c.iconColor }}>
-                      {c.icon}
-                    </span>
-                    <span className="char-placeholder-note">{c.artLabel}</span>
-                  </div>
+                  {c.id === 'kael' ? (
+                    <img
+                      src={kaelImg}
+                      alt="Kael Character Art"
+                      className="char-portrait-img"
+                      style={{ width: '100%', borderRadius: '12px', objectFit: 'cover' }}
+                    />
+                  ) : c.id === 'magnus' ? (
+                    <img
+                      src={magnusImg}
+                      alt="Magnus Character Art"
+                      className="char-portrait-img"
+                      style={{ width: '100%', borderRadius: '12px', objectFit: 'cover' }}
+                    />
+                  ) : (
+                    <div className={`char-portrait-bg portrait-${c.id}`}>
+                      <div className="char-portrait-scan" />
+                      <span className="char-silhouette" style={{ color: c.iconColor }}>
+                        {c.icon}
+                      </span>
+                      <span className="char-placeholder-note">{c.artLabel}</span>
+                    </div>
+                  )}
                 </div>
 
                 <div

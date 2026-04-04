@@ -13,10 +13,9 @@ const navLinks = [
 ]
 
 const socials = [
-  { label: 'GH', title: 'GitHub'  },
-  { label: 'FB', title: 'Facebook'},
-  { label: 'YT', title: 'YouTube' },
-  { label: 'DC', title: 'Discord' },
+  { label: 'GH', title: 'GitHub', href: 'https://github.com/paoloperalta246' },
+  { label: 'FB', title: 'Facebook', href: 'https://www.facebook.com/paoloperalta246' },
+  { label: 'YT', title: 'YouTube', href: 'https://www.youtube.com/@onlysuhi' },
 ]
 
 export default function Footer() {
@@ -39,7 +38,14 @@ export default function Footer() {
             </p>
             <div className="footer-social">
               {socials.map((s) => (
-                <a href="#" className="social-btn" title={s.title} key={s.label}>
+                <a
+                  href={s.href || '#'}
+                  className="social-btn"
+                  title={s.title}
+                  key={s.label}
+                  target={s.href ? '_blank' : undefined}
+                  rel={s.href ? 'noopener noreferrer' : undefined}
+                >
                   {s.label}
                 </a>
               ))}
@@ -83,11 +89,11 @@ export default function Footer() {
               </div>
               <div className="fi-item">
                 <span className="fi-label">LEVELS</span>
-                <span className="fi-value">8 + Final Boss</span>
+                <span className="fi-value">5 + Final Boss</span>
               </div>
               <div className="fi-item">
                 <span className="fi-label">PVP</span>
-                <span className="fi-value">Bluetooth / Hotspot</span>
+                <span className="fi-value">Hotspot / Wi-Fi</span>
               </div>
             </div>
 
@@ -104,7 +110,7 @@ export default function Footer() {
         <div className="footer-bottom-inner">
           <div className="footer-bottom-left">
             <span className="fb-logo">CC</span>
-            <span>© 2025 CLASH CIRCUIT — ALL RIGHTS RESERVED</span>
+            <span>© 2026 CLASH CIRCUIT — ALL RIGHTS RESERVED</span>
           </div>
           <div className="footer-bottom-center">
             <span className="terminal-text" style={{ opacity: 0.4 }}>
@@ -113,7 +119,7 @@ export default function Footer() {
             </span>
           </div>
           <div className="footer-bottom-right">
-            GAME DEVELOPMENT FINAL PROJECT · 2025
+            GAME DEVELOPMENT FINAL PROJECT · 2026
           </div>
         </div>
       </div>

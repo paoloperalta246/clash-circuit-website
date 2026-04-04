@@ -1,5 +1,7 @@
 import './Story.css'
 
+import cityImg from '../assets/cyberpunk-city-website-pic.png';
+
 export default function Story() {
   return (
     <section id="story" className="story-section">
@@ -32,8 +34,8 @@ export default function Story() {
             <p className="story-p">
               You play as <strong className="blue">Kael "Volt" Arden</strong>, a 22-year-old
               underground fighter from the lower sectors. His district was stripped of resources
-              by corporate manipulation. The only way to challenge authority — to fight back —
-              is to climb the Circuit ranks, defeat every faction that guards the system, and
+              by corporate manipulation. The only way to challenge the authority is to fight back,
+              climb the Circuit ranks, defeat every faction that guards the system, and
               reach the Grand Arena at the top.
             </p>
 
@@ -63,22 +65,22 @@ export default function Story() {
               <div className="corner-tr" />
               <div className="corner-bl" />
               <div className="corner-br" />
-              <div className="story-panel-header">▶ CITY_SCAN // NEO-DISTRICT_07</div>
+              <div className="story-panel-header">▶ CITY_SCAN // NEO-DISTRICT</div>
 
-              {/* Replace with <img src="..." alt="City" /> */}
-              <div className="holo-img-placeholder">
-                <div className="holo-icon">🌆</div>
-                <div className="holo-label">[ CYBERPUNK CITY ART ]</div>
-              </div>
+              <img
+                src={cityImg}
+                alt="Cyberpunk City"
+                className="holo-img-placeholder"
+                style={{ width: '100%', borderRadius: '12px', objectFit: 'cover' }}
+              />
 
               <div className="megacorp-badge">
                 ⚠ MEGACORP ZONE — AUTHORIZED ACCESS ONLY
               </div>
               <div className="setting-note">
-                <div className="setting-label">/// SETTING ///</div>
+                <div className="setting-label">/// BROADCAST STATUS ///</div>
                 <p>
-                  Neon-lit cyber arenas · Digital billboards ·
-                  Floating holograms
+                  Live feed encrypted · Views: <strong>1.5 million</strong> · Signal Strength: <strong>MAX</strong>
                 </p>
               </div>
             </div>

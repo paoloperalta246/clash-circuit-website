@@ -22,23 +22,30 @@ export default function Hero() {
       </div>
 
       <div className="hero-content">
-        <div className="hero-badge">ANDROID · 2D ARENA COMBAT · 2025</div>
+        <div className="hero-badge">ANDROID · 2D ARENA COMBAT · MULTIPLAYER</div>
 
         <h1 className="hero-title">
           CLASH
           <span className="line2">CIRCUIT</span>
         </h1>
 
-        <p className="hero-tagline">Fight for freedom inside the neon arenas</p>
+        <p className="hero-tagline">Fight for freedom inside the neon arena</p>
 
         <p className="hero-desc">
           A skill-based 2D top-down arena fighting game set in a dystopian cyberpunk world.
           Master timing, movement, and cooldown management to rise through MegaCorp's
-          controlled arenas — and expose the truth behind the Circuit.
+          controlled arenas and expose the truth behind the Circuit.
         </p>
 
         <div className="hero-btns">
-          <a href="#download" className="btn-primary">⬇ DOWNLOAD APK</a>
+          <a
+            href="https://www.mediafire.com/file/0vbib42aj8qiugh/Clash+Circuit.apk/file"
+            className="btn-primary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            ⬇ DOWNLOAD APK
+          </a>
           <a href="#overview" className="btn-secondary">▶ LEARN MORE</a>
         </div>
 

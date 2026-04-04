@@ -70,7 +70,13 @@ export default function Navbar() {
         {links.map((l) => (
           <a key={l.href} href={l.href} onClick={handleLinkClick}>{l.label}</a>
         ))}
-        <a href="#download" className="nav-mobile-download" onClick={handleLinkClick}>
+        <a
+          href="https://www.mediafire.com/file/0vbib42aj8qiugh/Clash+Circuit.apk/file"
+          className="nav-mobile-download"
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={handleLinkClick}
+        >
           ⬇ Download APK
         </a>
       </div>

@@ -50,7 +50,14 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
-        <a href="#download" className="nav-download">▼ Download APK</a>
+        <a
+          href="https://www.mediafire.com/file/0vbib42aj8qiugh/Clash+Circuit.apk/file"
+          className="nav-download"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          ▼ Download APK
+        </a>
         <button
           className={`nav-hamburger ${menuOpen ? 'open' : ''}`}
           onClick={() => setMenuOpen((o) => !o)}

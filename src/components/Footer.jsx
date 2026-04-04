@@ -96,10 +96,6 @@ export default function Footer() {
                 <span className="fi-value">Hotspot / Wi-Fi</span>
               </div>
             </div>
-
-            <a href="#download" className="footer-download-btn">
-              ⬇ DOWNLOAD APK
-            </a>
           </div>
 
         </div>

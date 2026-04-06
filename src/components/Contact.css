@@ -1,0 +1,136 @@
+.contact-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 14px;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.13rem;
+  color: #fff;
+  background: rgba(0,240,255,0.06);
+  border-radius: 0.7rem;
+  padding: 16px 22px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.08);
+  transition: background 0.2s;
+}
+.contact-row:last-child { margin-bottom: 0; }
+.contact-row:hover {
+  background: rgba(0,240,255,0.13);
+}
+.contact-icon {
+  font-size: 1.5rem;
+  margin-right: 6px;
+  color: var(--neon-blue);
+  filter: drop-shadow(0 0 6px #00ffd0cc);
+}
+.contact-label {
+  font-weight: 700;
+  color: var(--neon-blue);
+  letter-spacing: 1px;
+  margin-right: 4px;
+}
+.contact-sep {
+  color: var(--text-dim);
+  margin: 0 8px;
+  font-size: 1.1em;
+  font-weight: 400;
+}
+.contact-link {
+  color: var(--neon-blue);
+  font-family: inherit;
+  font-weight: 600;
+  cursor: default;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+}
+.contact-link-static {
+  pointer-events: none;
+  text-decoration: none;
+}
+
+/* Match section background and spacing */
+.contact-section {
+  background: linear-gradient(180deg, var(--dark) 0%, var(--dark2) 100%);
+  position: relative;
+  z-index: 1;
+  padding: 0;
+  margin: 0;
+}
+
+.section-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 64px 24px 48px 24px;
+}
+
+.section-label {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 4px;
+  color: var(--text-dim);
+  margin-bottom: 8px;
+}
+
+.section-title {
+  font-family: 'Orbitron', monospace;
+  font-size: clamp(1.3rem, 4vw, 2.1rem);
+  font-weight: 900;
+  color: #fff;
+  margin-bottom: 36px;
+  text-shadow: 0 0 20px rgba(0,240,255,0.15);
+}
+
+.accent {
+  color: var(--neon-blue);
+}
+
+.panel.contact-panel {
+  background: var(--dark2);
+  border-radius: 1.1rem;
+  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.12);
+  padding: 36px 32px;
+  margin: 0 auto;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.contact-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.contact-label {
+  font-weight: 700;
+  color: var(--neon-blue);
+  letter-spacing: 1px;
+}
+
+.contact-link {
+  color: var(--neon-blue);
+  text-decoration: underline;
+  font-family: inherit;
+}
+
+.contact-note {
+  font-size: 0.95rem;
+  color: var(--text-dim);
+  margin-top: 10px;
+  text-align: center;
+  font-family: 'Rajdhani', sans-serif;
+}

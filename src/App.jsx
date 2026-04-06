@@ -12,6 +12,7 @@ import Screenshots from './components/Screenshots'
 import Download from './components/Download'
 import Developers from './components/Developers'
 import Footer from './components/Footer'
+import Contact from './components/Contact'
 
 function App() {
   // Scroll-triggered fade-in observer
@@ -55,6 +56,8 @@ function App() {
         <Download />
         <div className="divider" />
         <Developers />
+        <div className="divider" />
+        <Contact />
       </main>
       <Footer />
     </>

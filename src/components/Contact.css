@@ -1,3 +1,39 @@
+.contact-section {
+  /* ...existing styles... */
+}
+
+@media (max-width: 600px) {
+  .section-inner {
+    padding: 32px 6vw 28px 6vw;
+  }
+  .panel.contact-panel {
+    padding: 18px 6vw;
+    max-width: 100%;
+    min-width: 0;
+  }
+  .contact-info {
+    gap: 10px;
+  }
+  .contact-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    padding: 12px 8px;
+    font-size: 1rem;
+  }
+  .contact-label, .contact-sep {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .contact-link {
+    font-size: 1rem;
+    word-break: break-all;
+  }
+  .contact-icon {
+    margin-bottom: 2px;
+    margin-right: 0;
+  }
+}
 .contact-row {
   display: flex;
   flex-direction: row;

@@ -57,7 +57,7 @@ export default function Features() {
                   <div className="upgrade-pill">🛡️ <span>+30% HP boost</span></div>
                   <div className="upgrade-pill">🔃 <span>-20% CD reduction</span></div>
                   <div className="upgrade-pill">⚡ <span>+10% movement speed</span></div>
-                  <div className="upgrade-pill">🔵 <span>+5% mana increase</span></div>
+                  {/* <div className="upgrade-pill">🔵 <span>+5% mana increase</span></div> */}
                 </div>
               )}
 

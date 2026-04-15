@@ -59,7 +59,7 @@ export default function Overview() {
               <div className="upgrade-pill">🛡️ <span>+30% </span> HP boost</div>
               <div className="upgrade-pill">🔃 <span>-20% </span> cooldown reduction</div>
               <div className="upgrade-pill">⚡ <span>+10% </span> movement speed</div>
-              <div className="upgrade-pill">🔵 <span>+5% </span> mana increase</div>
+              {/* <div className="upgrade-pill">🔵 <span>+5% </span> mana increase</div> */}
             </div>
             <p className="choose-note">
               Choose <strong className="blue">2 upgrades</strong> before each battle. Earn
